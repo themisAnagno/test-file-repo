@@ -1,5 +1,9 @@
 pipeline {
-    agent any
+    agent {
+        node {
+            label "dev01"
+        }
+    }
     tools {
         jdk 'jdk8'
     }
